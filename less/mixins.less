@@ -1,9 +1,14 @@
 // Mixins in here
 
 .mix-btn (@bkclr, @bora, @wdth) {
-      background-color: @bkclr;
-      border-radius: @bora;
-      max-width:@wdth;
+    background-color: @bkclr;
+    border-radius: @bora;
+    border:1px solid teal;
+    max-width:@wdth;
+    max-height:35px;
+    padding:10px 40px;
+    color:white;
 }
-
-.btn(teal, 10px, 125px);
+.btn {
+   .mix-btn(teal, 10px, 100%);
+}
